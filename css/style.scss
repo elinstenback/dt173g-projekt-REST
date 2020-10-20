@@ -1,0 +1,427 @@
+// Projekt — DT0173G, Webbutveckling, Mittuniversitetet. Av Elin Stenbäck 2020 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #222;
+}
+
+
+/* Error message */
+
+.error {
+    color: #ff5a54;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #ededf1;
+    padding-top: 20px;
+}
+
+.err {
+    color: #ff5a54;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #ededf1;
+    padding-top: 20px;
+}
+
+
+/* Index/login */
+
+.index-container {
+    background-color: #ededf1;
+    height: calc(100vh);
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    .log-in {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    }
+    form {
+        background-color: #f8f8f9;
+        padding: 80px 50px;
+        width: 250px;
+        text-align: left;
+        label {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        input {
+            width: 100%;
+            padding: 3px 0;
+            border: none;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+        }
+        .btn {
+            border: none;
+            border: 1px solid #ccc;
+            background-color: #57a6aa;
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}
+
+
+/* Admin */
+
+.container {
+    background-color: #ededf1;
+    max-width: 1500px;
+    margin: 0 auto;
+    header {
+        position: relative;
+        h2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .logout-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #57a6aa;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+    padding: 20px;
+    #portfolio {
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #f8f8f9;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            grid-column: 1/6;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        #printPortfolio {
+            grid-column: 1/6;
+            .portfolio {
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20% 20%;
+                p {
+                    margin: 5px 0;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                a {
+                    color: #57a6aa;
+                }
+                button {
+                    width: 95%;
+                    margin: 5px 0;
+                    background-color: #fff;
+                    padding: 5px 0;
+                    cursor: pointer;
+                    border: none;
+                    border: 1px solid #ccc;
+                    transition: all 0.5s ease-in-out;
+                }
+                .delete:hover {
+                    background-color: #ff5a54;
+                }
+                .update:hover {
+                    background-color: #ffbe00;
+                }
+            }
+        }
+        #portfolioForm {
+            margin-top: 20px;
+            grid-column: 1/2;
+            label {
+                font-size: 14px;
+                font-weight: 600;
+            }
+            #portfolioId {
+                display: none;
+            }
+            input {
+                width: 100%;
+                padding: 3px 0;
+                border: none;
+                border: 1px solid #ccc;
+                margin: 5px 0;
+            }
+            #addPortfolio {
+                background-color: #57a6aa;
+                padding: 10px 0;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+    #study {
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #f8f8f9;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            grid-column: 1/6;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        #printStudy {
+            grid-column: 1/6;
+            .study {
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20% 20%;
+                p {
+                    margin: 5px 0;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                button {
+                    width: 95%;
+                    margin: 5px 0;
+                    background-color: #fff;
+                    padding: 5px 0;
+                    cursor: pointer;
+                    border: none;
+                    border: 1px solid #ccc;
+                    transition: all 0.5s ease-in-out;
+                }
+                .delete:hover {
+                    background-color: #ff5a54;
+                }
+                .update:hover {
+                    background-color: #ffbe00;
+                }
+            }
+        }
+        #studyForm {
+            margin-top: 20px;
+            grid-column: 1/2;
+            label {
+                font-size: 14px;
+                font-weight: 600;
+            }
+            #studyId {
+                display: none;
+            }
+            input {
+                width: 100%;
+                padding: 3px 0;
+                border: none;
+                border: 1px solid #ccc;
+                margin: 5px 0;
+            }
+            #addStudy {
+                background-color: #57a6aa;
+                padding: 10px 0;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+    #work {
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #f8f8f9;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            grid-column: 1/6;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        #printWork {
+            grid-column: 1/6;
+            .work {
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20% 20%;
+                p {
+                    margin: 5px 0;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                button {
+                    width: 95%;
+                    margin: 5px 0;
+                    background-color: #fff;
+                    padding: 5px 0;
+                    cursor: pointer;
+                    border: none;
+                    border: 1px solid #ccc;
+                    transition: all 0.5s ease-in-out;
+                }
+                .delete:hover {
+                    background-color: #ff5a54;
+                }
+                .update:hover {
+                    background-color: #ffbe00;
+                }
+            }
+        }
+        #workForm {
+            margin-top: 20px;
+            grid-column: 1/2;
+            label {
+                font-size: 14px;
+                font-weight: 600;
+            }
+            #workId {
+                display: none;
+            }
+            input {
+                width: 100%;
+                padding: 3px 0;
+                border: none;
+                border: 1px solid #ccc;
+                margin: 5px 0;
+            }
+            #addWork {
+                background-color: #57a6aa;
+                padding: 10px 0;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Admin */
+    .container {
+        #portfolio {
+            display: grid;
+            grid-template-columns: 100%;
+            h2 {
+                grid-column: 1/2;
+            }
+            p {
+                grid-column: 1/2;
+                display: none;
+            }
+            #printPortfolio {
+                grid-column: 1/2;
+                .portfolio {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    p {
+                        grid-column: 1/3;
+                        display: block;
+                    }
+                    button {
+                        grid-column: 1/2;
+                        width: 100%;
+                    }
+                    .update {
+                        grid-column: 2/3;
+                        margin-left: 2px;
+                    }
+                }
+            }
+            #portfolioForm {
+                grid-column: 1/2;
+            }
+        }
+        #study {
+            display: grid;
+            grid-template-columns: 100%;
+            h2 {
+                grid-column: 1/2;
+            }
+            p {
+                grid-column: 1/2;
+                display: none;
+            }
+            #printStudy {
+                grid-column: 1/2;
+                .study {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    p {
+                        grid-column: 1/3;
+                        display: block;
+                    }
+                    button {
+                        grid-column: 1/2;
+                        width: 100%;
+                    }
+                    .update {
+                        grid-column: 2/3;
+                        margin-left: 2px;
+                    }
+                }
+            }
+            #studyForm {
+                grid-column: 1/2;
+            }
+        }
+        #work {
+            display: grid;
+            grid-template-columns: 100%;
+            h2 {
+                grid-column: 1/2;
+            }
+            p {
+                grid-column: 1/2;
+                display: none;
+            }
+            #printWork {
+                grid-column: 1/2;
+                .work {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    p {
+                        grid-column: 1/3;
+                        display: block;
+                    }
+                    button {
+                        grid-column: 1/2;
+                        width: 100%;
+                    }
+                    .update {
+                        grid-column: 2/3;
+                        margin-left: 2px;
+                    }
+                }
+            }
+            #workForm {
+                grid-column: 1/2;
+            }
+        }
+    }
+}

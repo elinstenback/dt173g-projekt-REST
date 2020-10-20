@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #222;
+}
+
+/* Error message */
+.error {
+  color: #ff5a54;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #ededf1;
+  padding-top: 20px;
+}
+
+.err {
+  color: #ff5a54;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #ededf1;
+  padding-top: 20px;
+}
+
+/* Index/login */
+.index-container {
+  background-color: #ededf1;
+  height: calc(100vh);
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.index-container .log-in {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.index-container .log-in h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.index-container form {
+  background-color: #f8f8f9;
+  padding: 80px 50px;
+  width: 250px;
+  text-align: left;
+}
+
+.index-container form label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.index-container form input {
+  width: 100%;
+  padding: 3px 0;
+  border: none;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.index-container form .btn {
+  border: none;
+  border: 1px solid #ccc;
+  background-color: #57a6aa;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Admin */
+.container {
+  background-color: #ededf1;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container header {
+  position: relative;
+}
+
+.container header h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container header .logout-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #57a6aa;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container #portfolio {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f8f8f9;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container #portfolio h2 {
+  font-size: 24px;
+  font-weight: 700;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  margin-bottom: 20px;
+}
+
+.container #portfolio p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container #portfolio #printPortfolio {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+}
+
+.container #portfolio #printPortfolio .portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container #portfolio #printPortfolio .portfolio p {
+  margin: 5px 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.container #portfolio #printPortfolio .portfolio a {
+  color: #57a6aa;
+}
+
+.container #portfolio #printPortfolio .portfolio button {
+  width: 95%;
+  margin: 5px 0;
+  background-color: #fff;
+  padding: 5px 0;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #ccc;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container #portfolio #printPortfolio .portfolio .delete:hover {
+  background-color: #ff5a54;
+}
+
+.container #portfolio #printPortfolio .portfolio .update:hover {
+  background-color: #ffbe00;
+}
+
+.container #portfolio #portfolioForm {
+  margin-top: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.container #portfolio #portfolioForm label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container #portfolio #portfolioForm #portfolioId {
+  display: none;
+}
+
+.container #portfolio #portfolioForm input {
+  width: 100%;
+  padding: 3px 0;
+  border: none;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+.container #portfolio #portfolioForm #addPortfolio {
+  background-color: #57a6aa;
+  padding: 10px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container #study {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f8f8f9;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container #study h2 {
+  font-size: 24px;
+  font-weight: 700;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  margin-bottom: 20px;
+}
+
+.container #study p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container #study #printStudy {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+}
+
+.container #study #printStudy .study {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container #study #printStudy .study p {
+  margin: 5px 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.container #study #printStudy .study button {
+  width: 95%;
+  margin: 5px 0;
+  background-color: #fff;
+  padding: 5px 0;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #ccc;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container #study #printStudy .study .delete:hover {
+  background-color: #ff5a54;
+}
+
+.container #study #printStudy .study .update:hover {
+  background-color: #ffbe00;
+}
+
+.container #study #studyForm {
+  margin-top: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.container #study #studyForm label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container #study #studyForm #studyId {
+  display: none;
+}
+
+.container #study #studyForm input {
+  width: 100%;
+  padding: 3px 0;
+  border: none;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+.container #study #studyForm #addStudy {
+  background-color: #57a6aa;
+  padding: 10px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container #work {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f8f8f9;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container #work h2 {
+  font-size: 24px;
+  font-weight: 700;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  margin-bottom: 20px;
+}
+
+.container #work p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container #work #printWork {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+}
+
+.container #work #printWork .work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container #work #printWork .work p {
+  margin: 5px 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.container #work #printWork .work button {
+  width: 95%;
+  margin: 5px 0;
+  background-color: #fff;
+  padding: 5px 0;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #ccc;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container #work #printWork .work .delete:hover {
+  background-color: #ff5a54;
+}
+
+.container #work #printWork .work .update:hover {
+  background-color: #ffbe00;
+}
+
+.container #work #workForm {
+  margin-top: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.container #work #workForm label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container #work #workForm #workId {
+  display: none;
+}
+
+.container #work #workForm input {
+  width: 100%;
+  padding: 3px 0;
+  border: none;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+.container #work #workForm #addWork {
+  background-color: #57a6aa;
+  padding: 10px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  /* Admin */
+  .container #portfolio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .container #portfolio h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #portfolio p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: none;
+  }
+  .container #portfolio #printPortfolio {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #portfolio #printPortfolio .portfolio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .container #portfolio #printPortfolio .portfolio p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    display: block;
+  }
+  .container #portfolio #printPortfolio .portfolio button {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    width: 100%;
+  }
+  .container #portfolio #printPortfolio .portfolio .update {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-left: 2px;
+  }
+  .container #portfolio #portfolioForm {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #study {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .container #study h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #study p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: none;
+  }
+  .container #study #printStudy {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #study #printStudy .study {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .container #study #printStudy .study p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    display: block;
+  }
+  .container #study #printStudy .study button {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    width: 100%;
+  }
+  .container #study #printStudy .study .update {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-left: 2px;
+  }
+  .container #study #studyForm {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #work {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .container #work h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #work p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: none;
+  }
+  .container #work #printWork {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #work #printWork .work {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .container #work #printWork .work p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    display: block;
+  }
+  .container #work #printWork .work button {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    width: 100%;
+  }
+  .container #work #printWork .work .update {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-left: 2px;
+  }
+  .container #work #workForm {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+}
+/*# sourceMappingURL=style.css.map */
